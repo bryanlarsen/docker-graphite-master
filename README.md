@@ -47,11 +47,11 @@ Running
 
 * Mount data volume from host for whisper data storage
 
-	`docker run -v /data/graphite:/opt/graphite/storage/whisper -e SECRET_KEY='random-secret-key' -d bryanlarsen/graphite`
+	`docker run -v /data/graphite:/opt/graphite/storage -e SECRET_KEY='random-secret-key' -d bryanlarsen/graphite`
 
 * Publish all ports to host and mount data volume from host
 
-	`docker run -p 80:80 -p 2003:2003 -p 2004:2004 -p 7002:7002 -v /data/graphite:/opt/graphite/storage/whisper -e SECRET_KEY='random-secret-key' -d bryanlarsen/graphite`
+	`docker run -p 80:80 -p 2003:2003 -p 2004:2004 -p 7002:7002 -v /data/graphite:/opt/graphite/storage -e SECRET_KEY='random-secret-key' -d bryanlarsen/graphite`
 
 
 Important
